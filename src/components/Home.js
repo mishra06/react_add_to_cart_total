@@ -46,9 +46,10 @@ const Home = () => {
 
     const price = () => {
         let total = count.productList.reduce((acc, product) => acc + (product.price * product.Quantity), 0);
-        return total;
-        
+        return total;   
     };
+
+    console.log(count.productList.some((ele)=>ele.Quantity>0));
 
   return (
     <div className="whole_cont">
@@ -79,19 +80,19 @@ const Home = () => {
                 <h1>Cart</h1>
             </div>
             <div className="cartss">
-            {
-            count.productList.map((item,id) => {
+                    {!count.productList.some((ele)=>ele.Quantity>0)? <h2>no data found</h2>:
+                        (count.productList.map((item, id) => {
                         if (item.Quantity > 0) {
                             return (
                                 <div className="right_sec" key={id}>
                                     <div className="names">{item.name}</div>
                                     <div>{`${item.price} * ${item.Quantity}`}</div>
                                 </div>
-                            );
-                        }
-                        return "";
-                    })}
-            </div>
+                             );
+                    }
+                    
+            }))}
+        </div>
             <div className="total_sec">
                 <div className="total_section">
                     <h2>Total:</h2>
