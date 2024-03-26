@@ -1,0 +1,117 @@
+
+.whole_cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 4rem;
+}
+
+
+.rit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    border: 7px solid red;
+    flex-direction: column;
+    padding: 15px;
+    height: 40vh;
+    gap: 1rem;
+}
+
+.hh{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2874f0;
+}
+
+.Carts_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 85%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_sec{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btns{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* cart section css  */
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    height: 50vh;
+    border: 5px solid green;
+    justify-content: center;
+    align-items: center;
+    
+    gap: .5rem;
+}
+.info{
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2874f0;
+
+}
+.cartss{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right_sec{
+    display: flex;
+    justify-content: space-around;
+    height: 2.5rem;
+    border: 3px solid black;
+    width: 90%;
+    background-color: #9cf043;
+    align-items: center;
+}
+
+.total_sec{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 15%;
+    align-items: center;
+    
+    background-color: #faebd7;
+}
